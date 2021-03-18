@@ -1,9 +1,16 @@
-export interface IProduct {
-    ProductID: number;
-    Name: string;
-    Price: number;
-    CategoryID: number;
-    OnSale: number;
-    StockLevel: string;
-    ImageURL: string;
+export interface IClients {
+    ClientID: number;
+    LastName: string;
+    FirstName: string;
+    MiddleName: string;
+    Street: string;
+    City: string;
+    State: string;
+    Zip: number;
+    Diagnosis1: string;
+    Diagnosis2: string;
+    Diagnosis3: string;
+    Insurance: string;
+    Notes: string;
+
 }
