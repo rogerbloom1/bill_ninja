@@ -16,8 +16,6 @@ const Clients: React.FC = () => {
         .catch((err) => console.log(err));
         };
 
-    
-
     return (
         <main className="container">
             <div className="d-flex justify-content-between">
@@ -26,6 +24,7 @@ const Clients: React.FC = () => {
                 Add Client
             </Link>
             </div>
+            
             <div className = "list-group">
                 {clients.map((c: IClients) => {
                     return (
@@ -34,7 +33,7 @@ const Clients: React.FC = () => {
                         </div>
                     );
                 })}
-            </div>
+            </div> 
         </main>
     );
 };

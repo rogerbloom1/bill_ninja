@@ -12,7 +12,7 @@ export default {
         user: process.env.DB_USER,
         password: process.env.DB_PASS,
         database: process.env.DB_SCHEMA,
-
+        insecureAuth: true,
     },
     port: 3000
 };

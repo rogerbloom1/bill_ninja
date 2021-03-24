@@ -16,7 +16,7 @@
   \************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar dotenv = __webpack_require__(/*! dotenv */ \"dotenv\");\nvar envFound = dotenv.config();\nif (!envFound) {\n    throw new Error(\"Can't read .env file!\");\n}\nexports.default = {\n    mysql: {\n        host: process.env.HOST,\n        user: process.env.DB_USER,\n        password: process.env.DB_PASS,\n        database: process.env.DB_SCHEMA,\n    },\n    port: 3000\n};\n\n\n//# sourceURL=webpack://template2/./src/server/config/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar dotenv = __webpack_require__(/*! dotenv */ \"dotenv\");\nvar envFound = dotenv.config();\nif (!envFound) {\n    throw new Error(\"Can't read .env file!\");\n}\nexports.default = {\n    mysql: {\n        host: process.env.HOST,\n        user: process.env.DB_USER,\n        password: process.env.DB_PASS,\n        database: process.env.DB_SCHEMA,\n        insecureAuth: true,\n    },\n    port: 3000\n};\n\n\n//# sourceURL=webpack://template2/./src/server/config/index.ts?");
 
 /***/ }),
 
